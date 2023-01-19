@@ -2,9 +2,6 @@ import 'package:carteira_do_nomade/pages/connections.dart';
 import 'package:carteira_do_nomade/pages/graphs.dart';
 import 'package:carteira_do_nomade/pages/resume.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:hexcolor/hexcolor.dart';
 
 class Home extends StatefulWidget {

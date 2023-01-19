@@ -1,6 +1,5 @@
+import 'package:carteira_do_nomade/components/platforms.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:hexcolor/hexcolor.dart';
 
 class Resume extends StatelessWidget {
@@ -17,6 +16,37 @@ class Resume extends StatelessWidget {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [HexColor('#292537'), HexColor('#332F47')],
+          ),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10),
+          child: Column(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  const Text(
+                    'Olá, Gabriel',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 36,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 70,
+                    width: 70,
+                    child: ClipOval(
+                      child: Image.network(
+                        'https://github.com/Gabriel-Passoss.png',
+                      ),
+                    ),
+                  )
+                ],
+              ),
+              const SizedBox(height: 30),
+              const Platforms()
+            ],
           ),
         ),
       ),
